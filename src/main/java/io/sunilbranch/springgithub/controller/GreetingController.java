@@ -1,10 +1,7 @@
 package io.sunilbranch.springgithub.controller;
 
 import io.sunilbranch.springgithub.model.GreetingMessage;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -23,4 +20,10 @@ public class GreetingController {
     public String createGreeting(){
         return "New Greetings created successfully";
     }
+
+    @DeleteMapping("/deleteGreeting")
+    public String deleteGreeting(){
+        return "Existing Greeting was deleted";
+    }
+
 }
