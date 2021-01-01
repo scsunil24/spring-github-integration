@@ -17,13 +17,12 @@ public class GreetingController {
     }
 
     @PostMapping("/createGreeting")
-    public String createGreeting(){
+    public String createGreeting() {
         return "New Greetings created successfully";
     }
 
     @DeleteMapping("/deleteGreeting")
-    public String deleteGreeting(){
+    public String deleteGreeting() {
         return "Existing Greeting was deleted";
     }
-
 }
