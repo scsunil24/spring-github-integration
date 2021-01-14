@@ -12,7 +12,7 @@
 	<artifactId>springgithub</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>SpringGitHub</name>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<description>Spring Boot GitHub Integration</description>
 
 	<properties>
@@ -47,6 +47,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>spring-boot-github-integration</finalName>
 	</build>
 
 </project>
